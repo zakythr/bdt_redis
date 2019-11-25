@@ -2,7 +2,7 @@
 
 ## Gambar Arsitektur
 
-![](/redis/arsitektur.png)
+![](/bdt_redis/arsitektur.png)
 
 ## Spesifikasi Node Redis
 
