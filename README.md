@@ -403,3 +403,25 @@ FLUSH PRIVILEGES;
  /** Sets up WordPress vars and included files. */
  require_once(ABSPATH . 'wp-settings.php');
 ```
+
+## Validasi Konfigurasi
+
+- Menjalankan Vagrantfile
+
+```
+vagrant up
+```
+
+- Masuk ke Redis
+
+```
+vagrant ssh redismaster
+vagrant ssh redisslave1
+vagrant ssh redisslave2
+```
+
+- Pada redismaster kita mengetik ```sdo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
+
+- Pada redisslave1 kita mengetik ```sudo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
+
+- Pada redisslave2 kita mengetik ```sudo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
