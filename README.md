@@ -454,3 +454,29 @@ vagrant ssh redisslave2
 - Instalasi Redis Object Cache pada salah satu wordpress, yaitu pada wordpress1 dengan alamat IP **192.168.17.143**
 
 ![](/redis/redisobjectcache.PNG)
+
+- Membuka wp-config.php, dan menambahkan konfigurasi di dalamnya
+
+```
+sudo nano /var/www/html/wp-config.php
+```
+
+dan menambahkan konfigurasi
+
+```
+define('FS_METHOD', 'direct');
+define('WP_REDIS_CLIENT', 'predis');
+define('WP_REDIS_SENTINEL', 'redis-cluster');
+define('WP_REDIS_SERVERS', ['tcp://192.168.17.140:26379', 'tcp://192.168.17.141:26379', 'tcp://192.168.17.142:26379']);
+```
+
+- Cek Diagnosis
+
+![](/redis/CekDiagnostic.PNG)
+
+- Tampilan default Wordpressnya
+
+![](/redis/tampilanWordpress1.PNG)
+
+![](/redis/tampilanWordpress2.PNG)
+
