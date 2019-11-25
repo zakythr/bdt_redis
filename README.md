@@ -480,3 +480,17 @@ define('WP_REDIS_SERVERS', ['tcp://192.168.17.140:26379', 'tcp://192.168.17.141:
 
 ![](/redis/tampilanWordpress2.PNG)
 
+
+## Pengujian dengan JMeter
+
+**1. 50 Koneksi**
+
+![](/redis/SummaryReport.PNG)
+
+**2. 100+3 digit NRP terakhir : 100 + 140 --> 240**
+
+![](/redis/SummaryReport240.PNG)
+
+**2. 200+3 digit NRP terakhir : 200 + 140 --> 340**
+
+![](/redis/SummaryReport340.PNG)
