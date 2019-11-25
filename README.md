@@ -439,3 +439,18 @@ vagrant ssh redisslave2
 
 ![](/redis/slave2.1.PNG)
 
+## Pengujian Performa Wordpress
+
+- Membenahi tampilan default apache (dinonaktifkan)
+
+![](/redis/defaultweb.PNG)
+
+![](/redis/defaultweb1.PNG)
+
+- Buka alamat IP wordpress pada browser (Alamat_IP/index.php)
+
+- Ikuti langkahnya sampai selesai
+
+- Instalasi Redis Object Cache pada salah satu wordpress, yaitu pada wordpress1 dengan alamat IP **192.168.17.143**
+
+![](/redis/redisobjectcache.PNG)
