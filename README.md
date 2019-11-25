@@ -422,6 +422,20 @@ vagrant ssh redisslave2
 
 - Pada redismaster kita mengetik ```sdo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
 
+![](/redis/master.PNG)
+
+![](/redis/master1.PNG)
+
 - Pada redisslave1 kita mengetik ```sudo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
 
+![](/redis/slave1.PNG)
+
+
+![](/redis/slave1.1.PNG)
+
 - Pada redisslave2 kita mengetik ```sudo redis-server /etc/redis/redis.conf``` dan ```sudo redis-server etc/redis-sentinel.conf --sentinel```
+
+![](/redis/slave2.PNG)
+
+![](/redis/slave2.1.PNG)
+
