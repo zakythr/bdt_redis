@@ -494,3 +494,5 @@ define('WP_REDIS_SERVERS', ['tcp://192.168.17.140:26379', 'tcp://192.168.17.141:
 **2. 200+3 digit NRP terakhir : 200 + 140 --> 340**
 
 ![](/redis/SummaryReport340.PNG)
+
+Kesimpulan : dari pengujian menggunakan JMeter Wordpress yang menggunakan redis sebagai cache nya melakukan load data relatif lebih cepat daripada yang tidak menggunakan redis.
