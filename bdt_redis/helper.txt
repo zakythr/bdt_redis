@@ -1,0 +1,11 @@
+vagrant
+
+cd /
+
+sudo redis-server etc/redis/redis.conf &
+
+sudo redis-server etc/redis-sentinel.conf --sentinel &
+
+sudo pkill redis-server
+
+ps -ef | grep redis
